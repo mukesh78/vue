@@ -14,6 +14,7 @@ window.Vue.use(VueRouter);
 
 
 import ItemIndex from './components/item/ItemIndex.vue';
+import ItemEdit from './components/item/ItemEdit.vue';
 import ItemCreate from './components/item/ItemCreate.vue';
 import CompaniesIndex from './components/companies/CompaniesIndex.vue';
 import CompaniesCreate from './components/companies/CompaniesCreate.vue';
@@ -22,6 +23,7 @@ import CompaniesEdit from './components/companies/CompaniesEdit.vue';
 const routes = [
     {path: '/item', component: ItemIndex, name: 'itemIndex'},
     {path: '/item/create', component: ItemCreate, name: 'itemCreate'},
+    {path: '/item/edit/:id', component: ItemEdit, name: 'editItem'},
     {path: '/', component: CompaniesIndex, name: 'companiesIndex'},
     {path: '/create', component: CompaniesCreate, name: 'createCompany'},
     {path: '/edit/:id', component: CompaniesEdit, name: 'editCompany'},
